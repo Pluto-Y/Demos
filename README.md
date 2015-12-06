@@ -1,5 +1,7 @@
 # Demos 用于记录学习的Demo记录
 
+喜欢的童鞋麻烦star一下，拜托了。
+
 # 文件或目录说明
 
 ## 100TipsOfSwift.playground
