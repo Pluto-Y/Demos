@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kbK-hw-LSu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cId-6R-49S">
+            <objects>
+                <navigationController id="kbK-hw-LSu" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lHu-PI-vQs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d3o-ho-nSq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb0-RZ-gAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.5" y="387.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HealthKitTotorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEb-Qk-lSb">
+                                <rect key="frame" x="172" y="83" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="授权"/>
+                                <connections>
+                                    <action selector="authorizeHealthKitClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0q-Tp-5lc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz5-rT-06S">
+                                <rect key="frame" x="142" y="121" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="读取用户特征"/>
+                                <connections>
+                                    <segue destination="wug-0D-rKv" kind="push" id="7Lc-TL-zOK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APl-4H-UU9">
+                                <rect key="frame" x="120" y="159" width="135" height="30"/>
+                                <animations/>
+                                <state key="normal" title="读取和存储简单数据"/>
+                                <connections>
+                                    <segue destination="KV3-CB-9zO" kind="push" id="e8Y-lc-bJf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TEb-Qk-lSb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="0TF-Rq-iA9"/>
+                            <constraint firstItem="APl-4H-UU9" firstAttribute="top" secondItem="Mz5-rT-06S" secondAttribute="bottom" constant="8" id="5Hd-42-bJc"/>
+                            <constraint firstItem="Mz5-rT-06S" firstAttribute="top" secondItem="TEb-Qk-lSb" secondAttribute="bottom" constant="8" id="F3U-sn-lYH"/>
+                            <constraint firstItem="TEb-Qk-lSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mbk-Sy-AOX"/>
+                            <constraint firstItem="Mz5-rT-06S" firstAttribute="centerX" secondItem="TEb-Qk-lSb" secondAttribute="centerX" id="lrg-zI-IPf"/>
+                            <constraint firstItem="APl-4H-UU9" firstAttribute="centerX" secondItem="Mz5-rT-06S" secondAttribute="centerX" id="odj-mU-gA1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ktU-iO-udq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.5" y="387.5"/>
+        </scene>
+        <!--Read And Save Data Controller-->
+        <scene sceneID="CrI-3a-EfK">
+            <objects>
+                <viewController id="KV3-CB-9zO" customClass="ReadAndSaveDataController" customModule="HealthKitTotorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a9H-aT-2rX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oa7-2d-ngC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EqA-Xq-3tX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高：Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-dI-3lT">
+                                <rect key="frame" x="131" y="129" width="113.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重：Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeG-sl-T0h">
+                                <rect key="frame" x="131" y="174" width="113.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI：Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0f2-yr-nyL">
+                                <rect key="frame" x="133" y="220" width="109" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFw-5G-nxE">
+                                <rect key="frame" x="135" y="266" width="105" height="30"/>
+                                <animations/>
+                                <state key="normal" title="读取身高和体重"/>
+                                <connections>
+                                    <action selector="readHeightAndWeightClick:" destination="KV3-CB-9zO" eventType="touchUpInside" id="ujE-wg-oZ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXr-UM-Ldo">
+                                <rect key="frame" x="137" y="321" width="102" height="30"/>
+                                <animations/>
+                                <state key="normal" title="计算BMI并存储"/>
+                                <connections>
+                                    <action selector="calAndSaveClick:" destination="KV3-CB-9zO" eventType="touchUpInside" id="VAP-r1-jXF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OeG-sl-T0h" firstAttribute="centerX" secondItem="Uue-dI-3lT" secondAttribute="centerX" id="AcD-sZ-OZ7"/>
+                            <constraint firstItem="xXr-UM-Ldo" firstAttribute="centerX" secondItem="qFw-5G-nxE" secondAttribute="centerX" id="JzE-NW-f7Q"/>
+                            <constraint firstItem="Uue-dI-3lT" firstAttribute="top" secondItem="a9H-aT-2rX" secondAttribute="bottom" constant="65" id="KoB-kQ-Tpi"/>
+                            <constraint firstItem="qFw-5G-nxE" firstAttribute="top" secondItem="0f2-yr-nyL" secondAttribute="bottom" constant="25" id="Mxy-Xn-Qeg"/>
+                            <constraint firstItem="OeG-sl-T0h" firstAttribute="top" secondItem="Uue-dI-3lT" secondAttribute="bottom" constant="25" id="RO6-wj-7Lp"/>
+                            <constraint firstItem="0f2-yr-nyL" firstAttribute="centerX" secondItem="OeG-sl-T0h" secondAttribute="centerX" id="VEo-XL-Uz5"/>
+                            <constraint firstItem="xXr-UM-Ldo" firstAttribute="top" secondItem="qFw-5G-nxE" secondAttribute="bottom" constant="25" id="gmd-5p-hD5"/>
+                            <constraint firstItem="qFw-5G-nxE" firstAttribute="centerX" secondItem="0f2-yr-nyL" secondAttribute="centerX" id="j9Q-Vs-5aF"/>
+                            <constraint firstItem="Uue-dI-3lT" firstAttribute="centerX" secondItem="EqA-Xq-3tX" secondAttribute="centerX" id="nVp-wA-J66"/>
+                            <constraint firstItem="0f2-yr-nyL" firstAttribute="top" secondItem="OeG-sl-T0h" secondAttribute="bottom" constant="25" id="wne-53-JDg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CgH-E0-6Dz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="yBMILbl" destination="0f2-yr-nyL" id="zsR-E4-b8d"/>
+                        <outlet property="yHeightLbl" destination="Uue-dI-3lT" id="GFv-UF-nTR"/>
+                        <outlet property="yWeightLbl" destination="OeG-sl-T0h" id="8mY-B3-iFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xm6-9U-HTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977.5" y="328.5"/>
+        </scene>
+        <!--Read User Characteristic Controller-->
+        <scene sceneID="a4Q-ix-cbE">
+            <objects>
+                <viewController id="wug-0D-rKv" customClass="ReadUserCharacteristicController" customModule="HealthKitTotorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aP7-6B-hb8"/>
+                        <viewControllerLayoutGuide type="bottom" id="R5O-ME-aj3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4cE-hT-BOX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别：Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI4-Ce-DKE">
+                                <rect key="frame" x="130" y="151" width="113.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年龄:Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87B-bn-lUr">
+                                <rect key="frame" x="136" y="187" width="101" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="血型：Unknow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFJ-Ea-FHm">
+                                <rect key="frame" x="130.5" y="225" width="113.5" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W58-e2-Cin">
+                                <rect key="frame" x="171" y="268" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="读取"/>
+                                <connections>
+                                    <action selector="readUserCharacteristic:" destination="wug-0D-rKv" eventType="touchUpInside" id="rnU-jB-vOZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="87B-bn-lUr" firstAttribute="centerX" secondItem="MI4-Ce-DKE" secondAttribute="centerX" id="ATc-hK-ACe"/>
+                            <constraint firstItem="MI4-Ce-DKE" firstAttribute="top" secondItem="aP7-6B-hb8" secondAttribute="bottom" constant="87" id="Aqm-bd-Tjj"/>
+                            <constraint firstItem="jFJ-Ea-FHm" firstAttribute="top" secondItem="87B-bn-lUr" secondAttribute="bottom" constant="17" id="Eey-sZ-pN5"/>
+                            <constraint firstItem="MI4-Ce-DKE" firstAttribute="centerX" secondItem="4cE-hT-BOX" secondAttribute="centerX" id="OB8-B3-AZH"/>
+                            <constraint firstItem="87B-bn-lUr" firstAttribute="top" secondItem="MI4-Ce-DKE" secondAttribute="bottom" constant="16" id="RZE-Rl-Z6V"/>
+                            <constraint firstItem="jFJ-Ea-FHm" firstAttribute="centerX" secondItem="87B-bn-lUr" secondAttribute="centerX" id="v7b-Rv-jGx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V3v-kK-3a9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="yAgeLbl" destination="87B-bn-lUr" id="CZ6-Ba-Wkp"/>
+                        <outlet property="yBloodLbl" destination="jFJ-Ea-FHm" id="6xV-1x-4tn"/>
+                        <outlet property="ySexLbl" destination="MI4-Ce-DKE" id="gTV-S7-H8z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olv-YE-ArB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977.5" y="-449.5"/>
+        </scene>
+    </scenes>
+</document>
