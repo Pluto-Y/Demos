@@ -16,6 +16,10 @@
 		6C10B2E91C1376FC00163023 /* HealthKitUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2E81C1376FC00163023 /* HealthKitUtil.swift */; };
 		6C10B2EB1C142D1600163023 /* ReadUserCharacteristicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2EA1C142D1600163023 /* ReadUserCharacteristicController.swift */; };
 		6C10B2ED1C14364C00163023 /* ReadAndSaveDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2EC1C14364C00163023 /* ReadAndSaveDataController.swift */; };
+		6C10B2EF1C1509F400163023 /* AddWorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2EE1C1509F400163023 /* AddWorkoutController.swift */; };
+		6C10B2F31C150AA700163023 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2F11C150AA700163023 /* DatePickerCell.swift */; };
+		6C10B2F41C150AA700163023 /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C10B2F21C150AA700163023 /* NumberCell.swift */; };
+		6CD883E51C278D2300A751B9 /* WorkoutsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD883E41C278D2300A751B9 /* WorkoutsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		6C10B2E81C1376FC00163023 /* HealthKitUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthKitUtil.swift; path = Util/HealthKitUtil.swift; sourceTree = "<group>"; };
 		6C10B2EA1C142D1600163023 /* ReadUserCharacteristicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadUserCharacteristicController.swift; sourceTree = "<group>"; };
 		6C10B2EC1C14364C00163023 /* ReadAndSaveDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadAndSaveDataController.swift; sourceTree = "<group>"; };
+		6C10B2EE1C1509F400163023 /* AddWorkoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkoutController.swift; sourceTree = "<group>"; };
+		6C10B2F11C150AA700163023 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		6C10B2F21C150AA700163023 /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		6CD883E41C278D2300A751B9 /* WorkoutsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +73,19 @@
 		6C10B2D11C1372F600163023 /* HealthKitTotorial */ = {
 			isa = PBXGroup;
 			children = (
+				6C10B2F01C150A9B00163023 /* Cell */,
 				6C10B2E71C13766C00163023 /* Util */,
 				6C10B2E61C13750D00163023 /* HealthKitTotorial.entitlements */,
 				6C10B2D21C1372F600163023 /* AppDelegate.swift */,
 				6C10B2D41C1372F600163023 /* ViewController.swift */,
+				6C10B2EE1C1509F400163023 /* AddWorkoutController.swift */,
 				6C10B2D61C1372F600163023 /* Main.storyboard */,
 				6C10B2D91C1372F600163023 /* Assets.xcassets */,
 				6C10B2DB1C1372F600163023 /* LaunchScreen.storyboard */,
 				6C10B2DE1C1372F600163023 /* Info.plist */,
 				6C10B2EA1C142D1600163023 /* ReadUserCharacteristicController.swift */,
 				6C10B2EC1C14364C00163023 /* ReadAndSaveDataController.swift */,
+				6CD883E41C278D2300A751B9 /* WorkoutsController.swift */,
 			);
 			path = HealthKitTotorial;
 			sourceTree = "<group>";
@@ -85,6 +96,15 @@
 				6C10B2E81C1376FC00163023 /* HealthKitUtil.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		6C10B2F01C150A9B00163023 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C10B2F11C150AA700163023 /* DatePickerCell.swift */,
+				6C10B2F21C150AA700163023 /* NumberCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +188,11 @@
 				6C10B2ED1C14364C00163023 /* ReadAndSaveDataController.swift in Sources */,
 				6C10B2EB1C142D1600163023 /* ReadUserCharacteristicController.swift in Sources */,
 				6C10B2E91C1376FC00163023 /* HealthKitUtil.swift in Sources */,
+				6C10B2F41C150AA700163023 /* NumberCell.swift in Sources */,
 				6C10B2D31C1372F600163023 /* AppDelegate.swift in Sources */,
+				6C10B2EF1C1509F400163023 /* AddWorkoutController.swift in Sources */,
+				6C10B2F31C150AA700163023 /* DatePickerCell.swift in Sources */,
+				6CD883E51C278D2300A751B9 /* WorkoutsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +348,7 @@
 				6C10B2E31C1372F600163023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

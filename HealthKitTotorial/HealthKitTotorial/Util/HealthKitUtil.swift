@@ -54,7 +54,7 @@ class HealthKitUtil : NSObject {
         // 读取生日
         if let birthday = try? store.dateOfBirth() {
             let today = NSDate()
-            let differenceComponents = NSCalendar.currentCalendar().components(NSCalendarUnit.Year, fromDate: birthday, toDate: today, options: NSCalendarOptions(rawValue: 0))
+            let differenceComponents = NSCalendar.currentCalendar().components([.Year], fromDate: birthday, toDate: today, options: NSCalendarOptions(rawValue: 0))
             age = differenceComponents.year
         }
         // 读取性别
@@ -119,6 +119,53 @@ class HealthKitUtil : NSObject {
                 print("保存BMI数据点成功!")
             }
         })
+    }
+    
+    class func saveRunWorkout(startDate:NSDate , endDate:NSDate , distance:Double, distanceUnit:HKUnit , kiloCalories:Double,
+        completion: ( (Bool, NSError!) -> Void)!) {
+            
+            // 1. 为距离和
+            let distanceQuantity = HKQuantity(unit: distanceUnit, doubleValue: distance)
+            let caloriesQuantity = HKQuantity(unit: HKUnit.kilocalorieUnit(), doubleValue: kiloCalories)
+            
+            // 2. 保存一个跑步记录
+            let workout = HKWorkout(activityType: HKWorkoutActivityType.Running, startDate: startDate, endDate: endDate, duration: abs(endDate.timeIntervalSinceDate(startDate)), totalEnergyBurned: caloriesQuantity, totalDistance: distanceQuantity, metadata: nil)
+            store.saveObject(workout, withCompletion: { (success, error) -> Void in
+                if( error != nil  ) {
+                    // 保存错误的时候将错误传递到调用的闭包
+                    completion(success,error)
+                } else {
+                    // 如果保存成功的话，将建立新的相关数据到Health Kit，即存储距离和卡路里消耗的点数到Health Kit
+                    let distanceSample = HKQuantitySample(type: HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!, quantity: distanceQuantity, startDate: startDate, endDate: endDate)
+                    let caloriesSample = HKQuantitySample(type: HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!, quantity: caloriesQuantity, startDate: startDate, endDate: endDate)
+                    
+                    // 保存卡路里和距离，并且与之前的Workout相关联
+                    store.addSamples([distanceSample,caloriesSample], toWorkout: workout, completion: { (success, error ) -> Void in
+                        // 保存成功
+                        completion(success,nil)
+                    })
+                }
+            })
+    }
+    
+    class func readRunningWorkOuts(completion: (([AnyObject]!, NSError!) -> Void)!) {
+        
+        // 1. 设置读取类型
+        let predicate =  HKQuery.predicateForWorkoutsWithWorkoutActivityType(HKWorkoutActivityType.Running)
+        // 2. 设置排序字段
+        let sortDescriptor = NSSortDescriptor(key:HKSampleSortIdentifierStartDate, ascending: false)
+        // 3. 创建一个查询的Query
+        let sampleQuery = HKSampleQuery(sampleType: HKWorkoutType.workoutType(), predicate: predicate, limit: 0, sortDescriptors: [sortDescriptor])
+            { (sampleQuery, results, error ) -> Void in
+                
+                if let queryError = error {
+                    print( "读取跑步数据的时候发生错误, Error: \(queryError.localizedDescription)")
+                }
+                completion(results,error)
+        }
+        // 4. 执行查询的Query
+        store.executeQuery(sampleQuery)
+        
     }
     
 }
