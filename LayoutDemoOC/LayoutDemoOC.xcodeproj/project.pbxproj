@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C73CBA41C84BDF00045BF42 /* AutoresizingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73CBA21C84BDF00045BF42 /* AutoresizingViewController.m */; };
+		6C73CBA51C84BDF00045BF42 /* AutoresizingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C73CBA31C84BDF00045BF42 /* AutoresizingViewController.xib */; };
+		6C73CBA81C84CBFB0045BF42 /* AutoresizingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73CBA71C84CBFB0045BF42 /* AutoresizingView.m */; };
 		6C99A91A1C8377F900135ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A9191C8377F900135ADD /* main.m */; };
 		6C99A91D1C8377F900135ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A91C1C8377F900135ADD /* AppDelegate.m */; };
 		6C99A9201C8377F900135ADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A91F1C8377F900135ADD /* ViewController.m */; };
 		6C99A9231C8377F900135ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A9211C8377F900135ADD /* Main.storyboard */; };
 		6C99A9251C8377F900135ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A9241C8377F900135ADD /* Assets.xcassets */; };
 		6C99A9281C8377F900135ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C99A9261C8377F900135ADD /* LaunchScreen.storyboard */; };
+		6CFE2BBB1C8B4FBF00D68DD9 /* AutoresizingXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE2BB91C8B4FBF00D68DD9 /* AutoresizingXibController.m */; };
+		6CFE2BBC1C8B4FBF00D68DD9 /* AutoresizingXibController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CFE2BBA1C8B4FBF00D68DD9 /* AutoresizingXibController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C73CBA11C84BDF00045BF42 /* AutoresizingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoresizingViewController.h; path = AutoresizingDemo/AutoresizingViewController.h; sourceTree = "<group>"; };
+		6C73CBA21C84BDF00045BF42 /* AutoresizingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoresizingViewController.m; path = AutoresizingDemo/AutoresizingViewController.m; sourceTree = "<group>"; };
+		6C73CBA31C84BDF00045BF42 /* AutoresizingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoresizingViewController.xib; path = AutoresizingDemo/AutoresizingViewController.xib; sourceTree = "<group>"; };
+		6C73CBA61C84CBFB0045BF42 /* AutoresizingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoresizingView.h; path = AutoresizingDemo/AutoresizingView.h; sourceTree = "<group>"; };
+		6C73CBA71C84CBFB0045BF42 /* AutoresizingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoresizingView.m; path = AutoresizingDemo/AutoresizingView.m; sourceTree = "<group>"; };
 		6C99A9151C8377F900135ADD /* LayoutDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C99A9191C8377F900135ADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C99A91B1C8377F900135ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +36,9 @@
 		6C99A9241C8377F900135ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C99A9271C8377F900135ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C99A9291C8377F900135ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFE2BB81C8B4FBF00D68DD9 /* AutoresizingXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoresizingXibController.h; path = AutoresizingDemo/AutoresizingXibController.h; sourceTree = "<group>"; };
+		6CFE2BB91C8B4FBF00D68DD9 /* AutoresizingXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoresizingXibController.m; path = AutoresizingDemo/AutoresizingXibController.m; sourceTree = "<group>"; };
+		6CFE2BBA1C8B4FBF00D68DD9 /* AutoresizingXibController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoresizingXibController.xib; path = AutoresizingDemo/AutoresizingXibController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +52,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C73CBA01C84B2940045BF42 /* AutoresizingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C73CBA11C84BDF00045BF42 /* AutoresizingViewController.h */,
+				6C73CBA21C84BDF00045BF42 /* AutoresizingViewController.m */,
+				6C73CBA31C84BDF00045BF42 /* AutoresizingViewController.xib */,
+				6C73CBA61C84CBFB0045BF42 /* AutoresizingView.h */,
+				6C73CBA71C84CBFB0045BF42 /* AutoresizingView.m */,
+				6CFE2BB81C8B4FBF00D68DD9 /* AutoresizingXibController.h */,
+				6CFE2BB91C8B4FBF00D68DD9 /* AutoresizingXibController.m */,
+				6CFE2BBA1C8B4FBF00D68DD9 /* AutoresizingXibController.xib */,
+			);
+			name = AutoresizingDemo;
+			sourceTree = "<group>";
+		};
 		6C99A90C1C8377F900135ADD = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +86,7 @@
 		6C99A9171C8377F900135ADD /* LayoutDemoOC */ = {
 			isa = PBXGroup;
 			children = (
+				6C73CBA01C84B2940045BF42 /* AutoresizingDemo */,
 				6C99A91B1C8377F900135ADD /* AppDelegate.h */,
 				6C99A91C1C8377F900135ADD /* AppDelegate.m */,
 				6C99A91E1C8377F900135ADD /* ViewController.h */,
@@ -136,8 +165,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CFE2BBC1C8B4FBF00D68DD9 /* AutoresizingXibController.xib in Resources */,
 				6C99A9281C8377F900135ADD /* LaunchScreen.storyboard in Resources */,
 				6C99A9251C8377F900135ADD /* Assets.xcassets in Resources */,
+				6C73CBA51C84BDF00045BF42 /* AutoresizingViewController.xib in Resources */,
 				6C99A9231C8377F900135ADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +182,10 @@
 			files = (
 				6C99A9201C8377F900135ADD /* ViewController.m in Sources */,
 				6C99A91D1C8377F900135ADD /* AppDelegate.m in Sources */,
+				6C73CBA41C84BDF00045BF42 /* AutoresizingViewController.m in Sources */,
+				6C73CBA81C84CBFB0045BF42 /* AutoresizingView.m in Sources */,
 				6C99A91A1C8377F900135ADD /* main.m in Sources */,
+				6CFE2BBB1C8B4FBF00D68DD9 /* AutoresizingXibController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +332,7 @@
 				6C99A92E1C8377F900135ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
