@@ -24,11 +24,20 @@
                                     <action selector="gotoAutoresizing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhl-26-MWj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-tI-hOX">
+                                <rect key="frame" x="261" y="130" width="78" height="30"/>
+                                <state key="normal" title="AutoLayout"/>
+                                <connections>
+                                    <action selector="gotoAutoLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="570-g6-wh5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="j5j-jU-Lv0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="BQJ-pU-p5x"/>
+                            <constraint firstItem="fC9-tI-hOX" firstAttribute="top" secondItem="j5j-jU-Lv0" secondAttribute="bottom" constant="14" id="N6y-Pl-Nu8"/>
                             <constraint firstItem="j5j-jU-Lv0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UvU-jl-1vc"/>
+                            <constraint firstItem="fC9-tI-hOX" firstAttribute="centerX" secondItem="j5j-jU-Lv0" secondAttribute="centerX" id="bj1-ER-ekV"/>
                         </constraints>
                     </view>
                 </viewController>

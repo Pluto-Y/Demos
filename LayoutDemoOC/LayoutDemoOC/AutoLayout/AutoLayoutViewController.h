@@ -1,5 +1,5 @@
 //
-//  AutoresizingXibController.h
+//  AutoLayoutViewController.h
 //  LayoutDemoOC
 //
 //  Created by Pluto Y on 16/3/6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AutoresizingXibController : UIViewController
+@interface AutoLayoutViewController : UIViewController
 
 @end

@@ -2,7 +2,7 @@
 //  AutoresizingViewController.m
 //  LayoutDemoOC
 //
-//  Created by ChipSea on 16/3/1.
+//  Created by Pluto Y on 16/3/1.
 //  Copyright © 2016年 pluto-y. All rights reserved.
 //
 
@@ -72,6 +72,7 @@
 }
 
 - (IBAction)height:(id)sender {
+    
     _kContentView.contentView.autoresizingMask = _kContentView.contentView.autoresizingMask |UIViewAutoresizingFlexibleHeight;
     [self realodAutoresizingString];
 }

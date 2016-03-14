@@ -2,7 +2,7 @@
 //  AutoresizingXibController.m
 //  LayoutDemoOC
 //
-//  Created by ChipSea on 16/3/6.
+//  Created by Pluto Y on 16/3/6.
 //  Copyright © 2016年 pluto-y. All rights reserved.
 //
 
