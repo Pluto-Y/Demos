@@ -20,6 +20,8 @@
 		6C8B72151CBC073100478356 /* WrapContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B72131CBC073100478356 /* WrapContentViewController.xib */; };
 		6C8B72191CBC13D100478356 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B72171CBC13D100478356 /* ScrollViewController.m */; };
 		6C8B721A1CBC13D100478356 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B72181CBC13D100478356 /* ScrollViewController.xib */; };
+		6C98CC531CBE99ED00A58D6B /* SizeClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C98CC511CBE99ED00A58D6B /* SizeClassViewController.m */; };
+		6C98CC541CBE99ED00A58D6B /* SizeClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C98CC521CBE99ED00A58D6B /* SizeClassViewController.xib */; };
 		6C99A91A1C8377F900135ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A9191C8377F900135ADD /* main.m */; };
 		6C99A91D1C8377F900135ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A91C1C8377F900135ADD /* AppDelegate.m */; };
 		6C99A9201C8377F900135ADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99A91F1C8377F900135ADD /* ViewController.m */; };
@@ -51,6 +53,9 @@
 		6C8B72161CBC13D100478356 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		6C8B72171CBC13D100478356 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		6C8B72181CBC13D100478356 /* ScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		6C98CC501CBE99ED00A58D6B /* SizeClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SizeClassViewController.h; path = SizeClassDemo/SizeClassViewController.h; sourceTree = "<group>"; };
+		6C98CC511CBE99ED00A58D6B /* SizeClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SizeClassViewController.m; path = SizeClassDemo/SizeClassViewController.m; sourceTree = "<group>"; };
+		6C98CC521CBE99ED00A58D6B /* SizeClassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SizeClassViewController.xib; path = SizeClassDemo/SizeClassViewController.xib; sourceTree = "<group>"; };
 		6C99A9151C8377F900135ADD /* LayoutDemoOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutDemoOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C99A9191C8377F900135ADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C99A91B1C8377F900135ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +119,16 @@
 			name = AutoresizingDemo;
 			sourceTree = "<group>";
 		};
+		6C98CC4F1CBE99C100A58D6B /* SizeClassDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C98CC501CBE99ED00A58D6B /* SizeClassViewController.h */,
+				6C98CC511CBE99ED00A58D6B /* SizeClassViewController.m */,
+				6C98CC521CBE99ED00A58D6B /* SizeClassViewController.xib */,
+			);
+			name = SizeClassDemo;
+			sourceTree = "<group>";
+		};
 		6C99A90C1C8377F900135ADD = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +148,7 @@
 		6C99A9171C8377F900135ADD /* LayoutDemoOC */ = {
 			isa = PBXGroup;
 			children = (
+				6C98CC4F1CBE99C100A58D6B /* SizeClassDemo */,
 				6C1007AA1CA85606000F6814 /* AutoLayoutDemo */,
 				6C73CBA01C84B2940045BF42 /* AutoresizingDemo */,
 				6C99A91B1C8377F900135ADD /* AppDelegate.h */,
@@ -219,6 +235,7 @@
 				6C1007B41CA85606000F6814 /* PriorityViewController.xib in Resources */,
 				6C99A9251C8377F900135ADD /* Assets.xcassets in Resources */,
 				6C8B72151CBC073100478356 /* WrapContentViewController.xib in Resources */,
+				6C98CC541CBE99ED00A58D6B /* SizeClassViewController.xib in Resources */,
 				6C73CBA51C84BDF00045BF42 /* AutoresizingViewController.xib in Resources */,
 				6C8B721A1CBC13D100478356 /* ScrollViewController.xib in Resources */,
 				6C99A9231C8377F900135ADD /* Main.storyboard in Resources */,
@@ -233,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C98CC531CBE99ED00A58D6B /* SizeClassViewController.m in Sources */,
 				6C99A9201C8377F900135ADD /* ViewController.m in Sources */,
 				6C99A91D1C8377F900135ADD /* AppDelegate.m in Sources */,
 				6C73CBA41C84BDF00045BF42 /* AutoresizingViewController.m in Sources */,
